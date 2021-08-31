@@ -18,13 +18,14 @@ const style = {
   footer: {
     position: "fixed",
     bottom: 0,
-    color: "white"
+    color: "white",
   },
 };
 
-const Svg = ({ src, width, left, top }) => (
+const Svg = ({ src, alt, width, left, top }) => (
   <img
     src={src}
+    alt={alt}
     style={{
       position: "absolute",
       display: "block",
@@ -217,20 +218,23 @@ const MyBackground = () => {
 
       {/* STARS */}
       <ParallaxLayer offset={0} speed={-0.1} factor={2}>
-        <img
+        <Svg
           src={imgStars}
+          alt="stars"
           style={{ display: "block", width: "100%", backgroundSize: "cover" }}
         />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.2} factor={3}>
-        <img
+        <Svg
           src={imgStars}
+          alt="stars"
           style={{ display: "block", width: "100%", backgroundSize: "cover" }}
         />
       </ParallaxLayer>
       <ParallaxLayer offset={0.5} speed={-0.5} factor={2}>
         <Svg
           src={imgStars}
+          alt="stars"
           style={{ display: "block", width: "100%", backgroundSize: "cover" }}
         />
       </ParallaxLayer>
@@ -239,6 +243,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={0} speed={-0.7} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/639/639373.svg"
+          alt="639373"
           width="25%"
           left="10vw"
           top="15vh"
@@ -248,6 +253,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={0.1} speed={0.6} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/547/547420.svg"
+          alt="547420"
           width="15%"
           left="20vw"
           top="60vh"
@@ -256,6 +262,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={0} speed={0.2} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/926/926355.svg"
+          alt="926355"
           width="10vw"
           left="70vw"
           top="10vh"
@@ -265,6 +272,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={1} speed={-0.5} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/997/997065.svg"
+          alt="997065"
           width="15vw"
           left="70%"
           top="10%"
@@ -274,6 +282,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={1} speed={0} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/614/614643.svg"
+          alt="614643"
           width="25vw"
           left="10vw"
           top="70vh"
@@ -283,6 +292,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={1.5} speed={1} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/179/179595.svg"
+          alt="179595"
           width="15vw"
           left="75%"
           top="60%"
@@ -292,6 +302,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={3} speed={0.4} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/2918/2918588.svg"
+          alt="2918588"
           width="15vw"
           left="70vw"
           top="10vh"
@@ -302,6 +313,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={3} speed={0.4} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/614/614645.svg"
+          alt="614645"
           width="30vw"
           left="1vw"
           top="70vh"
@@ -310,6 +322,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={3} speed={0.1} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/614/614645.svg"
+          alt="614645"
           width="25vw"
           left="50vw"
           top="70vh"
@@ -318,6 +331,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={3} speed={0.3} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/614/614645.svg"
+          alt="614645"
           width="40vw"
           left="70vw"
           top="65vh"
@@ -326,6 +340,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={3} speed={0.3} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/614/614663.svg"
+          alt="614663"
           width="40vw"
           left="3vw"
           top="78vh"
@@ -334,6 +349,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={3} speed={0.1} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/614/614663.svg"
+          alt="614663"
           width="35vw"
           left="60vw"
           top="79vh"
@@ -342,6 +358,7 @@ const MyBackground = () => {
       <ParallaxLayer offset={3} speed={0.5} factor={1}>
         <Svg
           src="https://image.flaticon.com/icons/svg/614/614663.svg"
+          alt="614663"
           width="20vw"
           left="40%"
           top="80%"

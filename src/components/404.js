@@ -26,6 +26,7 @@ const ErrorPage = ({ history }) => {
       <ParallaxLayer offset={0} speed={-0.1} factor={2}>
         <img
           src={imgStars}
+          alt="stars"
           style={{ display: "block", width: "100%", backgroundSize: "cover" }}
         />
       </ParallaxLayer>
@@ -33,6 +34,7 @@ const ErrorPage = ({ history }) => {
       <ParallaxLayer offset={0} speed={0.6} factor={1}>
         <img
           src="https://image.flaticon.com/icons/svg/1111/1111719.svg"
+          alt="desktop404"
           style={{
             position: "absolute",
             display: "block",
@@ -46,6 +48,7 @@ const ErrorPage = ({ history }) => {
       <ParallaxLayer offset={0} speed={0.6} factor={1}>
         <img
           src="https://image.flaticon.com/icons/svg/1010/1010656.svg"
+          alt="magnifier"
           style={{
             position: "absolute",
             display: "block",
@@ -60,6 +63,7 @@ const ErrorPage = ({ history }) => {
       <ParallaxLayer offset={0} speed={0.6} factor={1}>
       <img
           src="https://image.flaticon.com/icons/svg/547/547420.svg"
+          alt="astronaut"
           style={{
             position: "absolute",
             display: "block",

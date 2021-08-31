@@ -1,6 +1,6 @@
 import React from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Container, Typography } from "@material-ui/core";
 
 const style = {
   container: {
