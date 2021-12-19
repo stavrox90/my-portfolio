@@ -1,7 +1,19 @@
 import React from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
-import imgStars from "../images/stars.svg";
 import { Box, Typography } from "@material-ui/core";
+import { stars, bird, sun, rocket, astronaut, astronaut2, earth, satellite, ufo, tree } from '../images'
+
+const svg = {
+  sun,
+  bird,
+  rocket,
+  astronaut,
+  astronaut2,
+  ufo,
+  tree,
+  earth,
+  satellite,
+}
 
 const style = {
   container: {
@@ -140,8 +152,9 @@ const MyBackground = () => {
         />
       </ParallaxLayer>
       <ParallaxLayer offset={2.2} speed={-0.3} factor={1}>
+        {/* SUN */}
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614633.svg"
+          src={svg.sun}
           width="20vw"
           left="10%"
           top="60%"
@@ -219,21 +232,21 @@ const MyBackground = () => {
       {/* STARS */}
       <ParallaxLayer offset={0} speed={-0.1} factor={2}>
         <Svg
-          src={imgStars}
+          src={stars}
           alt="stars"
           style={{ display: "block", width: "100%", backgroundSize: "cover" }}
         />
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.2} factor={3}>
         <Svg
-          src={imgStars}
+          src={stars}
           alt="stars"
           style={{ display: "block", width: "100%", backgroundSize: "cover" }}
         />
       </ParallaxLayer>
       <ParallaxLayer offset={0.5} speed={-0.5} factor={2}>
         <Svg
-          src={imgStars}
+          src={stars}
           alt="stars"
           style={{ display: "block", width: "100%", backgroundSize: "cover" }}
         />
@@ -242,7 +255,7 @@ const MyBackground = () => {
       {/* ROCKET */}
       <ParallaxLayer offset={0} speed={-0.7} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/639/639373.svg"
+          src={svg.rocket}
           alt="639373"
           width="25%"
           left="10vw"
@@ -252,7 +265,7 @@ const MyBackground = () => {
       {/* ASTRONAUTS */}
       <ParallaxLayer offset={0.1} speed={0.6} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/547/547420.svg"
+          src={svg.astronaut2}
           alt="547420"
           width="15%"
           left="20vw"
@@ -261,7 +274,7 @@ const MyBackground = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={0} speed={0.2} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/926/926355.svg"
+          src={svg.astronaut}
           alt="926355"
           width="10vw"
           left="70vw"
@@ -271,7 +284,7 @@ const MyBackground = () => {
       {/* SATELLITE */}
       <ParallaxLayer offset={1} speed={-0.5} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/997/997065.svg"
+          src={svg.satellite}
           alt="997065"
           width="15vw"
           left="70%"
@@ -281,7 +294,7 @@ const MyBackground = () => {
       {/* EARTH */}
       <ParallaxLayer offset={1} speed={0} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614643.svg"
+          src={svg.earth}
           alt="614643"
           width="25vw"
           left="10vw"
@@ -291,7 +304,7 @@ const MyBackground = () => {
       {/* UFO */}
       <ParallaxLayer offset={1.5} speed={1} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/179/179595.svg"
+          src={svg.ufo}
           alt="179595"
           width="15vw"
           left="75%"
@@ -301,7 +314,7 @@ const MyBackground = () => {
       {/* BIRD */}
       <ParallaxLayer offset={3} speed={0.4} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/2918/2918588.svg"
+          src={svg.bird}
           alt="2918588"
           width="15vw"
           left="70vw"
@@ -312,16 +325,25 @@ const MyBackground = () => {
       {/* TREES */}
       <ParallaxLayer offset={3} speed={0.4} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614645.svg"
+          src={svg.tree}
+          alt="614645"
+          width="35vw"
+          left="-4vw"
+          top="40vh"
+        />
+      </ParallaxLayer>
+      <ParallaxLayer offset={3} speed={0.4} factor={1}>
+        <Svg
+          src={svg.tree}
           alt="614645"
           width="30vw"
-          left="1vw"
-          top="70vh"
+          left="20vw"
+          top="60vh"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.1} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614645.svg"
+          src={svg.tree}
           alt="614645"
           width="25vw"
           left="50vw"
@@ -330,16 +352,16 @@ const MyBackground = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.3} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614645.svg"
+          src={svg.tree}
           alt="614645"
           width="40vw"
           left="70vw"
-          top="65vh"
+          top="40vh"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.3} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614663.svg"
+          src={svg.tree}
           alt="614663"
           width="40vw"
           left="3vw"
@@ -348,7 +370,7 @@ const MyBackground = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.1} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614663.svg"
+          src={svg.tree}
           alt="614663"
           width="35vw"
           left="60vw"
@@ -357,11 +379,11 @@ const MyBackground = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.5} factor={1}>
         <Svg
-          src="https://image.flaticon.com/icons/svg/614/614663.svg"
+          src={svg.tree}
           alt="614663"
           width="20vw"
           left="40%"
-          top="80%"
+          top="70vh"
         />
       </ParallaxLayer>
       {/* FOOTER */}
