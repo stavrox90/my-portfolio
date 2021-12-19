@@ -329,7 +329,7 @@ const MyBackground = () => {
           alt="614645"
           width="35vw"
           left="-4vw"
-          top="40vh"
+          top="70%"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.4} factor={1}>
@@ -338,7 +338,7 @@ const MyBackground = () => {
           alt="614645"
           width="30vw"
           left="20vw"
-          top="60vh"
+          top="75%"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.1} factor={1}>
@@ -347,7 +347,7 @@ const MyBackground = () => {
           alt="614645"
           width="25vw"
           left="50vw"
-          top="70vh"
+          top="75%"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.3} factor={1}>
@@ -356,7 +356,7 @@ const MyBackground = () => {
           alt="614645"
           width="40vw"
           left="70vw"
-          top="40vh"
+          top="80%"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.3} factor={1}>
@@ -365,7 +365,7 @@ const MyBackground = () => {
           alt="614663"
           width="40vw"
           left="3vw"
-          top="78vh"
+          top="80%"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.1} factor={1}>
@@ -374,7 +374,7 @@ const MyBackground = () => {
           alt="614663"
           width="35vw"
           left="60vw"
-          top="79vh"
+          top="85%"
         />
       </ParallaxLayer>
       <ParallaxLayer offset={3} speed={0.5} factor={1}>
@@ -383,7 +383,7 @@ const MyBackground = () => {
           alt="614663"
           width="20vw"
           left="40%"
-          top="70vh"
+          top="85%"
         />
       </ParallaxLayer>
       {/* FOOTER */}
